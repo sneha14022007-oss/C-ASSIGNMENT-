@@ -1,4 +1,5 @@
 1. Define a base class Crop with attributes like name, area, season, and yieldPerAcre. Use appropriate access specifiers and constructors
+
 class Crop {
 protected:
     string name, season;
@@ -24,6 +25,7 @@ public:
     }
 };
 2. Derive two classes CerealCrop and VegetableCrop from Crop using inheritance, adding their specific data members (e.g., fertilizer type, irrigation frequency).
+
 class CerealCrop : public Crop {
 private:
     string fertilizerType;
@@ -48,6 +50,7 @@ public:
     }
 };
 3. Use constructor overloading and a virtual destructor.
+
 class Crop {
 protected:
     string name, season;
@@ -76,6 +79,7 @@ public:
     }
 };
 4. Apply runtime polymorphism to calculate and display total yield for both crop types.
+
 class Crop {
 protected:
     string name;
@@ -133,6 +137,7 @@ int main() {
     return 0;
 }
 5. Demonstrate operator overloading to compare two crops based on yield.
+
 class Crop {
 protected:
     string name;
@@ -169,6 +174,7 @@ int main() {
     return 0;
 }
 6. Create an abstract class Advisory that has a pure virtual function giveAdvice(). Implement this in derived classes to provide farming tips for different crops.
+
 class Advisory {
 public:
     virtual void giveAdvice() const = 0;
@@ -248,6 +254,7 @@ int main() {
     return 0;
 }
 8. Include at least one use of static members (e.g., count of crops).
+
 #include <iostream>
 using namespace std;
 
@@ -280,6 +287,7 @@ int main() {
     return 0;
 }
 9. Ensure appropriate input/output formatting and proper exception handling (e.g.. invalid area or yield input).
+
 #include <iostream>
 #include <iomanip>
 #include <stdexcept>
