@@ -1,4 +1,4 @@
-1. Define a base class Crop with attributes like name, area, season, and yieldPerAcre. Use appropriate access specifiers and constructors
+1. Define a base class Crop with attributes like name, area, season, and yieldPerAcre. Use appropriate access specifiers and constructors.
 
 class Crop {
 protected:
